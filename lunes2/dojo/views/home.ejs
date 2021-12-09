@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Home </title>
+    </head>
+    <body>
+        <h1>
+            Welcome to Quoting Dojo
+        </h1>
+        <h2>
+            Add a new quote:
+        </h2>
+        <form method="POST" action="/quotes">
+            <div>
+                <label for="firstName">
+                    First Name: 
+                </label>
+                <input type="text" id="firstName" name="firstName" />
+            </div>
+            <div>
+                <label for="lastName">
+                    Last Name: 
+                </label>
+                <input type="text" id="lastName" name="lastName" />
+            </div>
+            <div>
+                <label for="userQuote">
+                    Your Quote: 
+                </label>
+                <input type="text" id="userQuote" name="userQuote" />
+            </div>
+            <div>
+                <label for="userId">
+                    Id: 
+                </label>
+                <input type="number" id="userId" name="userId" />
+            </div>
+            <div>
+                <button type="submit">
+                    Add my quote
+                </button>
+                <a href="/quotes">
+                    Skyp quotes
+                </a>
+            </div>
+        </form>
+    </body>
+</html>
